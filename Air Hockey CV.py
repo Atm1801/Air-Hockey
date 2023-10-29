@@ -12,12 +12,12 @@ cap.set(3, 920)
 cap.set(4, 580)
 
 imgBackground = cv2.imread("/Users/Atharv/Downloads/Resources/NewProject.png")
-imgBall = cv2.imread("/Users/Atharv/Downloads/Resources/imageok.png", cv2.IMREAD_UNCHANGED)
-imgBat1 = cv2.imread("/Users/Atharv/Downloads/Resources/Paddle_1.png", cv2.IMREAD_UNCHANGED)
-imgBat2 = cv2.imread("/Users/Atharv/Downloads/Resources/Paddle_2.png", cv2.IMREAD_UNCHANGED)
-imggoal = cv2.imread("/Users/Atharv/Downloads/Resources/gand.jpeg", cv2.IMREAD_UNCHANGED)
-imgblue = cv2.imread("/Users/Atharv/Downloads/Resources/bluewins.jpeg", cv2.IMREAD_UNCHANGED)
-imgred = cv2.imread("/Users/Atharv/Downloads/Resources/redwins.jpeg", cv2.IMREAD_UNCHANGED )
+imgBall = cv2.imread("/Resources/imageok.png", cv2.IMREAD_UNCHANGED)
+imgBat1 = cv2.imread("/Resources/Paddle_1.png", cv2.IMREAD_UNCHANGED)
+imgBat2 = cv2.imread("/Resources/Paddle_2.png", cv2.IMREAD_UNCHANGED)
+imggoal = cv2.imread("/Resources/gand.jpeg", cv2.IMREAD_UNCHANGED)
+imgblue = cv2.imread("/Resources/bluewins.jpeg", cv2.IMREAD_UNCHANGED)
+imgred = cv2.imread("/Resources/redwins.jpeg", cv2.IMREAD_UNCHANGED )
 
 detector = HandDetector(detectionCon=0.8, maxHands=2)
 
@@ -110,9 +110,9 @@ while True:
         gameStop=1
         gameOver=True
         if score[0] > score [1]:
-            imgGameOver = cv2.imread("/Users/Atharv/Downloads/Resources/redwins.jpeg", cv2.IMREAD_UNCHANGED)
+            imgGameOver = cv2.imread("/Resources/redwins.jpeg", cv2.IMREAD_UNCHANGED)
         else:
-            imgGameOver = cv2.imread("/Users/Atharv/Downloads/Resources/bluewins.jpeg", cv2.IMREAD_UNCHANGED)
+            imgGameOver = cv2.imread("/Resources/bluewins.jpeg", cv2.IMREAD_UNCHANGED)
 
         img=imgGameOver
 
